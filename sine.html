@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Audio API</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="title">
+      <h1>Test Sine Wave Generator</h1>
+      <p>
+        Click start to begin.  Once you stop the tone, you must refresh
+        the page begin again.
+      </p>
+      <p>Pitch Controls</p>
+    </div>
+    <div class="buttons">
+      <button type="button" name="start" id="start">Start</button>
+      <button type="button" name="up" id="up">Up</button>
+      <button type="button" name="down" id="down">Down</button>
+      <button type="button" name="stop" id="stop">Stop</button>
+    </div>
+    <div class="volume">
+      <p>Volume Controls</p>
+      <input type="range" min="0" max="1" step="0.01" value=".5" id="volume" />
+    </div>
+    <div class="title">
+      <p>LFO Controls</p>
+    </div>
+    <div class="buttons">
+      <button type="button" name="startLFO" id="startLFO">Start LFO</button>
+      <button type="button" name="stopLFO" id="stopLFO">Stop LFO</button>
+    </div>
+    <div class="volume">
+      <p>LFO Gain Controls</p>
+      <input type="range" min="0" max="300" step="10" value="100" id="lfoGainSlider" />
+    </div>
+    <div class="buttons">
+      <p>LFO Frequency Controls</p>
+      <button type="button" name="LFO Frequency Up" id="lfoFrequencyUp">LFO +</button>
+      <button type="button" name="LFO Frequency Down" id="lfoFrequencyDown">LFO -</button>
+      <p>LFO Type</p>
+      <button type="button" name="LFO Square" id="lfoSquare">Square</button>
+      <button type="button" name="LFO Sine" id="lfoSine">Sine</button>
+      <button type="button" name="LFO Sawtooth" id="lfoSawtooth">Sawtooth</button>
+      <button type="button" name="LFO Triangle" id="lfoTriangle">Triangle</button>
+      
+    </div>
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
